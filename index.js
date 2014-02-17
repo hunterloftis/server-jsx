@@ -1,2 +1,2 @@
-exports.render = require('./lib/render').render;
-exports.modules = require('./lib/jsx-modules');
+module.exports = require('./lib/render').render;
+module.exports.modules = require('./lib/jsx-modules');

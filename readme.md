@@ -4,13 +4,13 @@ JSX Rendering in node.js:
 
 ```js
 var express = require('express');
-var render = require('server-jsx').render;
+var jsx = require('server-jsx');
 
 var app = express();
-var jsx = render(__dirname);
+var render = jsx(__dirname);
 
 app.use(function(req, res, next) {
-  var html = jsx('template', {
+  var html = render('template', {
     city: 'San Francisco',
     route: req.path
   });
@@ -19,3 +19,16 @@ app.use(function(req, res, next) {
 
 app.listen(4000);
 ```
+
+## Installation
+
+`npm install --save server-jsx`
+
+## Test
+
+`npm test`
+
+## Examples
+
+`npm run example` then open [http://localhost:4000/foo/bar](http://localhost:4000/foo/bar)
+

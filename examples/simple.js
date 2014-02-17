@@ -1,11 +1,11 @@
 var express = require('express');
-var render = require('..').render;
+var jsx = require('..');
 
 var app = express();
-var jsx = render(__dirname);
+var render = jsx(__dirname);
 
 app.use(function(req, res, next) {
-  var html = jsx('template', {
+  var html = render('template', {
     city: 'San Francisco',
     route: req.path
   });
