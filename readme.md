@@ -24,6 +24,8 @@ app.listen(4000);
 
 `npm install --save server-jsx`
 
+server-jsx uses React 0.9.0rc1.
+
 ## Test
 
 `npm test`
