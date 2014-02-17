@@ -1,0 +1,29 @@
+{
+  "name": "server-jsx",
+  "version": "0.0.1",
+  "description": "Require and render React's JSX on your node.js server",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hunterloftis/server-jsx"
+  },
+  "keywords": [
+    "react",
+    "jsx",
+    "render"
+  ],
+  "author": "Hunter Loftis <hunter@hunterloftis.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hunterloftis/server-jsx/issues"
+  },
+  "homepage": "https://github.com/hunterloftis/server-jsx",
+  "dependencies": {
+    "react-tools": "~0.9.0-rc1",
+    "envify": "~1.0.1",
+    "react": "~0.9.0-rc1"
+  }
+}
