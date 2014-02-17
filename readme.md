@@ -30,5 +30,6 @@ app.listen(4000);
 
 ## Examples
 
-`npm run example` then open [http://localhost:4000/foo/bar](http://localhost:4000/foo/bar)
+1. `npm run example`
+2. open [http://localhost:4000/foo/bar](http://localhost:4000/foo/bar)
 
