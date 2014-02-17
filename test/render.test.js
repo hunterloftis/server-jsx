@@ -1,11 +1,11 @@
 var assert = require('chai').assert;
 var path = require('path');
-var render = require('../lib/render');
+var render = require('..').render;
 
 describe('render', function() {
   before(function() {
-    var file = path.join(__dirname, 'fixtures', 'template.jsx');
-    this.html = render(file, { route: '/foo/bar' });
+    var jsx = render(__dirname);
+    this.html = jsx('fixtures/template.jsx', { route: '/foo/bar' });
   });
   it('should return rendered html', function() {
     assert.include(this.html, '<h1 data-reactid="');

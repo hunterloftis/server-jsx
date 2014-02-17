@@ -1,5 +1,10 @@
+# server-jsx
+
+Require and render React's JSX in node.js.
+
+```js
 var express = require('express');
-var render = require('..').render;
+var render = require('server-jsx').render;
 
 var app = express();
 var jsx = render(__dirname);
@@ -13,4 +18,4 @@ app.use(function(req, res, next) {
 });
 
 app.listen(4000);
-
+```
