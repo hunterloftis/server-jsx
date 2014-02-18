@@ -1,6 +1,6 @@
 {
   "name": "server-jsx",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Require and render React's JSX on your node.js server",
   "main": "index.js",
   "scripts": {
