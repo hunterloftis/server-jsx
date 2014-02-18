@@ -1,2 +1,3 @@
-module.exports = require('./lib/render').render;
-module.exports.modules = require('./lib/jsx-modules');
+require('./lib/jsx-modules'); // enable JSX requires
+
+module.exports = require('./lib/render');

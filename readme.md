@@ -4,13 +4,12 @@ JSX Rendering in node.js:
 
 ```js
 var express = require('express');
-var jsx = require('server-jsx');
+var render = require('server-jsx');
 
 var app = express();
-var render = jsx(__dirname);
 
 app.use(function(req, res, next) {
-  var html = render('template', {
+  var html = render(__dirname, 'template', {
     city: 'San Francisco',
     route: req.path
   });
